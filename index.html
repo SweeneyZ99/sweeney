@@ -1,2 +1,47 @@
-<h1>My first try <h1>
-  
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页光源</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="light-area" id="lightArea">
+        <div class="countdown-container" id="countdownContainer">
+            <div class="countdown-display" id="countdownDisplay">10</div>
+        </div>
+    </div>
+
+    <div class="control-buttons">
+        <button class="control-button" id="resetBtn" title="重置设置">↺</button>
+        <button class="control-button" id="countdownBtn" title="10秒倒计时">⏱</button>
+        <button class="control-button" id="fullscreenBtn" title="全屏模式">⛶</button>
+    </div>
+
+    <div class="controls-container" id="controlsContainer">
+        <div class="controls" id="controlsPanel">
+            <div class="slider-container">
+                <label for="brightness">亮度</label>
+                <input type="range" id="brightness" min="0" max="100" value="100">
+                <span class="value-display" id="brightnessValue">100%</span>
+            </div>
+            <div class="slider-container">
+                <label for="temperature">色温</label>
+                <input type="range" id="temperature" min="1000" max="10000" value="5500">
+                <span class="value-display" id="temperatureValue">5500K</span>
+            </div>
+            <div class="slider-container">
+                <label for="hue">色相</label>
+                <input type="range" id="hue" min="0" max="360" value="0">
+                <span class="value-display" id="hueValue">0°</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
